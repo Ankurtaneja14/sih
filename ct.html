@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Collaborative Tools - Government Report Portal</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background-color: #f4f4f9;
+      font-family: 'Arial', sans-serif;
+    }
+  </style>
+</head>
+<body class="text-gray-700">
+
+  <!-- Sidebar -->
+  <div class="flex h-screen">
+    <div class="w-64 bg-gray-800 text-white shadow-lg">
+      <div class="p-6">
+        <h2 class="text-2xl font-bold">Gov Report Portal</h2>
+      </div>
+      <nav class="mt-6">
+        <ul>
+          <li class="mb-2">
+            <a href="index.html" class="block text-gray-100 py-2 px-4 hover:bg-gray-700">Dashboard</a>
+          </li>
+          <li class="mb-2">
+            <a href="reports.html" class="block text-gray-100 py-2 px-4 hover:bg-gray-700">Reports</a>
+          </li>
+          <li class="mb-2">
+            <a href="task.html" class="block text-gray-100 py-2 px-4 hover:bg-gray-700">Tasks</a>
+          </li>
+          <li class="mb-2">
+            <a href="#" class="block text-gray-100 py-2 px-4 hover:bg-gray-700">Collaborative Tools</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Main Collaborative Tools Content -->
+    <div class="flex-1 p-10 bg-white">
+      <div class="mb-8">
+        <h1 class="text-3xl font-semibold">Collaborative Tools</h1>
+        <p class="text-gray-500">Enhance team collaboration with the following tools.</p>
+      </div>
+
+      <!-- Tool Links and Descriptions -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <!-- Live Chat Tool -->
+        <div class="bg-white border border-gray-200 shadow-lg rounded-lg p-6">
+          <h3 class="text-xl font-semibold text-blue-600">Live Chat</h3>
+          <p class="mt-2 text-gray-600">Communicate with your team in real time to discuss report progress, share feedback, and collaborate effectively.</p>
+          <a href="live.html" class="inline-block mt-4 text-white bg-blue-500 px-4 py-2 rounded hover:bg-blue-600">Access Tool</a>
+        </div>
+
+        <!-- Real-Time Editing Tool -->
+        <div class="bg-white border border-gray-200 shadow-lg rounded-lg p-6">
+          <h3 class="text-xl font-semibold text-green-600">Real-Time Editing</h3>
+          <p class="mt-2 text-gray-600">Edit the same report simultaneously with your team, ensuring faster updates and better collaboration.</p>
+          <a href="editor.html" class="inline-block mt-4 text-white bg-green-500 px-4 py-2 rounded hover:bg-green-600">Access Tool</a>
+        </div>
+
+        <!-- Version Control Tool -->
+        <div class="bg-white border border-gray-200 shadow-lg rounded-lg p-6">
+          <h3 class="text-xl font-semibold text-red-600">Version Control</h3>
+          <p class="mt-2 text-gray-600">Keep track of changes made to the report, restore previous versions, and maintain full control over the document history.</p>
+          <a href="history.html" class="inline-block mt-4 text-white bg-red-500 px-4 py-2 rounded hover:bg-red-600">Access Tool</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Government Employee Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background-color: #f4f4f9;
+      font-family: 'Arial', sans-serif;
+    }
+  </style>
+</head>
+<body class="text-gray-700">
+
+  <!-- Sidebar -->
+  <div class="flex h-screen">
+    <div class="w-64 bg-gray-800 text-white shadow-lg">
+      <div class="p-6">
+        <h2 class="text-2xl font-bold">Gov Report Portal</h2>
+      </div>
+      <nav class="mt-6">
+        <ul>
+          <li class="mb-2">
+            <a href="#" class="block text-gray-100 py-2 px-4 hover:bg-gray-700">Dashboard</a>
+          </li>
+          <li class="mb-2">
+            <a href="reports.html" class="block text-gray-100 py-2 px-4 hover:bg-gray-700">Reports</a>
+          </li>
+          <li class="mb-2">
+            <a href="task.html" class="block text-gray-100 py-2 px-4 hover:bg-gray-700">Tasks</a>
+          </li>
+          <li class="mb-2">
+            <a href="ct.html" class="block text-gray-100 py-2 px-4 hover:bg-gray-700">Collaborative Tools</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Main Dashboard Content -->
+    <div class="flex-1 p-10 bg-white">
+      <div class="mb-8">
+        <h1 class="text-3xl font-semibold">Departmental Reports Overview</h1>
+        <p class="text-gray-500">Manage department reports, assign tasks, and collaborate.</p>
+      </div>
+
+      <!-- Task Progress Tracking & Deadlines -->
+      <div class="grid grid-cols-3 gap-6 mb-8">
+        <!-- Task Progress -->
+        <div class="bg-white p-6 border rounded-lg shadow-md">
+          <h2 class="text-xl font-semibold mb-4">Task Progress</h2>
+          <div>
+            <p>Task 1: Report Preparation <span class="float-right">75%</span></p>
+            <div class="w-full bg-gray-200 h-2 rounded mt-2">
+              <div class="bg-blue-500 h-2 rounded" style="width: 75%"></div>
+            </div>
+            <p class="mt-4">Task 2: Financial Data <span class="float-right">50%</span></p>
+            <div class="w-full bg-gray-200 h-2 rounded mt-2">
+              <div class="bg-blue-500 h-2 rounded" style="width: 50%"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Task Assignments -->
+        <div class="bg-white p-6 border rounded-lg shadow-md">
+          <h2 class="text-xl font-semibold mb-4">Task Assignments</h2>
+          <ul>
+            <li class="flex justify-between items-center mb-4">
+              <span>Assign Report Sections</span>
+              <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"><a href="task.html">Assign</a></button>
+            </li>
+            <li class="flex justify-between items-center mb-4">
+              <span>Review Previous Drafts</span>
+              <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"><a href="reports.html">Review</a></button>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Collaborative Tools -->
+        <div class="bg-white p-6 border rounded-lg shadow-md">
+          <h2 class="text-xl font-semibold mb-4">Collaborative Tools</h2>
+          <ul>
+            <li class="flex justify-between items-center mb-4">
+              <span>Live Chat</span>
+              <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"><a href="live.html">Chat</a></button>
+            </li>
+            <li class="flex justify-between items-center mb-4">
+              <span>Version Control</span>
+              <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"><a href="history.html">History</a></button>
+            </li>
+            <li class="flex justify-between items-center mb-4">
+              <span>Collaborative Editing</span>
+              <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"><a href="editor.html">Edit</a></button>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Report Management & Customization Tools -->
+      <div class="bg-white p-8 border rounded-lg shadow-md">
+        <h2 class="text-xl font-semibold mb-6">Manage Reports</h2>
+        <table class="w-full table-auto text-gray-600">
+          <thead>
+            <tr class="bg-gray-100">
+              <th class="px-4 py-2">Department</th>
+              <th class="px-4 py-2">Report Status</th>
+              <th class="px-4 py-2">Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-t">
+              <td class="px-4 py-2">Computer Science</td>
+              <td class="px-4 py-2">In Progress</td>
+              <td class="px-4 py-2">
+                <button class="bg-blue-500 text-white px-3 py-1 rounded hover:bg-blue-600">Edit</button>
+                <button class="bg-red-500 text-white px-3 py-1 rounded hover:bg-red-600">Delete</button>
+                <button class="bg-gray-500 text-white px-3 py-1 rounded hover:bg-gray-600">Collaborate</button>
+              </td>
+            </tr>
+            <tr class="border-t">
+              <td class="px-4 py-2">Electrical Engineering</td>
+              <td class="px-4 py-2">Pending Review</td>
+              <td class="px-4 py-2">
+                <button class="bg-blue-500 text-white px-3 py-1 rounded hover:bg-blue-600">Edit</button>
+                <button class="bg-red-500 text-white px-3 py-1 rounded hover:bg-red-600">Delete</button>
+                <button class="bg-gray-500 text-white px-3 py-1 rounded hover:bg-gray-600">Collaborate</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reports Management - Government Report Portal</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background-color: #f4f4f9;
+      font-family: 'Arial', sans-serif;
+    }
+  </style>
+</head>
+<body class="text-gray-700">
+
+  <!-- Sidebar -->
+  <div class="flex h-screen">
+    <div class="w-64 bg-gray-800 text-white shadow-lg">
+      <div class="p-6">
+        <h2 class="text-2xl font-bold">Gov Report Portal</h2>
+      </div>
+      <nav class="mt-6">
+        <ul>
+          <li class="mb-2">
+            <a href="index.html" class="block text-gray-100 py-2 px-4 hover:bg-gray-700">Dashboard</a>
+          </li>
+          <li class="mb-2">
+            <a href="#" class="block text-gray-100 py-2 px-4 hover:bg-gray-700">Reports</a>
+          </li>
+          <li class="mb-2">
+            <a href="task.html" class="block text-gray-100 py-2 px-4 hover:bg-gray-700">Tasks</a>
+          </li>
+          <li class="mb-2">
+            <a href="ct.html" class="block text-gray-100 py-2 px-4 hover:bg-gray-700">Collaborative Tools</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Main Reports Content -->
+    <div class="flex-1 p-10 bg-white">
+      <div class="mb-8">
+        <h1 class="text-3xl font-semibold">Manage Reports</h1>
+        <p class="text-gray-500">Search, edit, and export reports efficiently.</p>
+      </div>
+
+      <!-- Search and Add New Report -->
+      <div class="flex justify-between items-center mb-6">
+        <div class="flex items-center space-x-2">
+          <input type="text" placeholder="Search reports..." class="p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+          <button class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">Search</button>
+        </div>
+        <button class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600">Add New Report</button>
+      </div>
+
+      <!-- Reports Table -->
+      <div class="bg-white border rounded-lg shadow-md p-6">
+        <table class="w-full table-auto">
+          <thead class="bg-gray-100">
+            <tr>
+              <th class="px-4 py-2 text-left">Department</th>
+              <th class="px-4 py-2 text-left">Report Name</th>
+              <th class="px-4 py-2 text-left">Status</th>
+              <th class="px-4 py-2 text-left">Last Updated</th>
+              <th class="px-4 py-2 text-left">Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-t">
+              <td class="px-4 py-2">Computer Science</td>
+              <td class="px-4 py-2">Annual Research Report</td>
+              <td class="px-4 py-2 text-yellow-500">Draft</td>
+              <td class="px-4 py-2">2024-09-12</td>
+              <td class="px-4 py-2 flex space-x-2">
+                <button class="bg-blue-500 text-white px-3 py-1 rounded hover:bg-blue-600">Edit</button>
+                <button class="bg-red-500 text-white px-3 py-1 rounded hover:bg-red-600">Delete</button>
+                <button class="bg-green-500 text-white px-3 py-1 rounded hover:bg-green-600">Export PDF</button>
+              </td>
+            </tr>
+            <tr class="border-t">
+              <td class="px-4 py-2">Mechanical Engineering</td>
+              <td class="px-4 py-2">Annual Performance Report</td>
+              <td class="px-4 py-2 text-green-500">Published</td>
+              <td class="px-4 py-2">2024-09-10</td>
+              <td class="px-4 py-2 flex space-x-2">
+                <button class="bg-blue-500 text-white px-3 py-1 rounded hover:bg-blue-600">Edit</button>
+                <button class="bg-red-500 text-white px-3 py-1 rounded hover:bg-red-600">Delete</button>
+                <button class="bg-green-500 text-white px-3 py-1 rounded hover:bg-green-600">Export PDF</button>
+              </td>
+            </tr>
+            <tr class="border-t">
+              <td class="px-4 py-2">Electrical Engineering</td>
+              <td class="px-4 py-2">Infrastructure Development Report</td>
+              <td class="px-4 py-2 text-yellow-500">Draft</td>
+              <td class="px-4 py-2">2024-09-09</td>
+              <td class="px-4 py-2 flex space-x-2">
+                <button class="bg-blue-500 text-white px-3 py-1 rounded hover:bg-blue-600">Edit</button>
+                <button class="bg-red-500 text-white px-3 py-1 rounded hover:bg-red-600">Delete</button>
+                <button class="bg-green-500 text-white px-3 py-1 rounded hover:bg-green-600">Export PDF</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

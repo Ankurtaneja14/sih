@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Version Control - Government Report Portal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background-color: #f4f4f9;
+            font-family: 'Arial', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="text-gray-700">
+
+    <!-- Sidebar -->
+    <div class="flex h-screen">
+        <div class="w-64 bg-gray-800 text-white shadow-lg">
+            <div class="p-6">
+                <h2 class="text-2xl font-bold">Gov Report Portal</h2>
+            </div>
+            <nav class="mt-6">
+                <ul>
+                    <li class="mb-2">
+                        <a href="index.html" class="block text-gray-100 py-2 px-4 hover:bg-gray-700">Dashboard</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="reports.html" class="block text-gray-100 py-2 px-4 hover:bg-gray-700">Reports</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="task.html" class="block text-gray-100 py-2 px-4 hover:bg-gray-700">Tasks</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="ct.html" class="block text-gray-100 py-2 px-4 hover:bg-gray-700">Collaborative Tools</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Main Content (Version Control) -->
+        <div class="flex-1 p-10 bg-white">
+            <div class="mb-8">
+                <h1 class="text-3xl font-semibold">Version Control</h1>
+                <p class="text-gray-500">Manage, open, edit, or delete previous versions of your reports.</p>
+            </div>
+
+            <!-- Version History Section -->
+            <div class="bg-white p-6 border rounded-lg shadow-md mb-12">
+                <h2 class="text-xl font-semibold mb-4">Previous Report Versions</h2>
+
+                <!-- Report List -->
+                <table class="w-full table-auto">
+                    <thead class="bg-gray-100">
+                        <tr>
+                            <th class="px-4 py-2 text-left">Report Title</th>
+                            <th class="px-4 py-2 text-left">Date Modified</th>
+                            <th class="px-4 py-2 text-left">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Example Report Version 1 -->
+                        <tr class="border-t">
+                            <td class="px-4 py-2">Annual Report 2024</td>
+                            <td class="px-4 py-2">2024-09-15</td>
+                            <td class="px-4 py-2">
+                                <button class="bg-blue-500 text-white px-3 py-1 rounded hover:bg-blue-600">Open</button>
+                                <button class="bg-yellow-500 text-white px-3 py-1 rounded hover:bg-yellow-600">Edit</button>
+                                <button class="bg-red-500 text-white px-3 py-1 rounded hover:bg-red-600">Delete</button>
+                            </td>
+                        </tr>
+
+                        <!-- Example Report Version 2 -->
+                        <tr class="border-t">
+                            <td class="px-4 py-2">Annual Report 2023</td>
+                            <td class="px-4 py-2">2024-09-12</td>
+                            <td class="px-4 py-2">
+                                <button class="bg-blue-500 text-white px-3 py-1 rounded hover:bg-blue-600">Open</button>
+                                <button class="bg-yellow-500 text-white px-3 py-1 rounded hover:bg-yellow-600">Edit</button>
+                                <button class="bg-red-500 text-white px-3 py-1 rounded hover:bg-red-600">Delete</button>
+                            </td>
+                        </tr>
+
+                        <!-- Example Report Version 3 -->
+                        <tr class="border-t">
+                            <td class="px-4 py-2">Quarterly Report Q2</td>
+                            <td class="px-4 py-2">2024-09-08</td>
+                            <td class="px-4 py-2">
+                                <button class="bg-blue-500 text-white px-3 py-1 rounded hover:bg-blue-600">Open</button>
+                                <button class="bg-yellow-500 text-white px-3 py-1 rounded hover:bg-yellow-600">Edit</button>
+                                <button class="bg-red-500 text-white px-3 py-1 rounded hover:bg-red-600">Delete</button>
+                            </td>
+                        </tr>
+
+                        <!-- Example Report Version 4 -->
+                        <tr class="border-t">
+                            <td class="px-4 py-2">Financial Report 2023</td>
+                            <td class="px-4 py-2">2024-09-05</td>
+                            <td class="px-4 py-2">
+                                <button class="bg-blue-500 text-white px-3 py-1 rounded hover:bg-blue-600">Open</button>
+                                <button class="bg-yellow-500 text-white px-3 py-1 rounded hover:bg-yellow-600">Edit</button>
+                                <button class="bg-red-500 text-white px-3 py-1 rounded hover:bg-red-600">Delete</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Editing/Preview Section -->
+            <div class="bg-white p-6 border rounded-lg shadow-md">
+                <h2 class="text-xl font-semibold mb-6">Report Preview</h2>
+                <p class="text-gray-600 mb-4">Click on a report version to open or edit it. The preview will appear here.</p>
+                <div class="bg-gray-100 p-4 rounded-lg shadow-sm">
+                    <!-- Placeholder content for report preview -->
+                    <p class="italic text-gray-500">No report selected. Please choose a report version to view or edit.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

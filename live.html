@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Live Chat - Government Report Portal</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background-color: #f4f4f9;
+      font-family: 'Arial', sans-serif;
+    }
+  </style>
+</head>
+<body class="text-gray-700">
+
+  <!-- Sidebar -->
+  <div class="flex h-screen">
+    <div class="w-64 bg-gray-800 text-white shadow-lg">
+      <div class="p-6">
+        <h2 class="text-2xl font-bold">Gov Report Portal</h2>
+      </div>
+      <nav class="mt-6">
+        <ul>
+          <li class="mb-2">
+            <a href="index.html" class="block text-gray-100 py-2 px-4 hover:bg-gray-700">Dashboard</a>
+          </li>
+          <li class="mb-2">
+            <a href="reports.html" class="block text-gray-100 py-2 px-4 hover:bg-gray-700">Reports</a>
+          </li>
+          <li class="mb-2">
+            <a href="task.html" class="block text-gray-100 py-2 px-4 hover:bg-gray-700">Tasks</a>
+          </li>
+          <li class="mb-2">
+            <a href="ct.html" class="block text-gray-100 py-2 px-4 hover:bg-gray-700">Collaborative Tools</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Main Content (Live Chat) -->
+    <div class="flex-1 p-10 bg-white">
+      <div class="mb-8">
+        <h1 class="text-3xl font-semibold">Live Chat</h1>
+        <p class="text-gray-500">Collaborate with your team in real-time.</p>
+      </div>
+
+      <!-- Chat Area -->
+      <div class="grid grid-cols-2 gap-8 mb-12">
+        <!-- Live Chat Section -->
+        <div class="bg-white p-6 border rounded-lg shadow-md">
+          <h2 class="text-xl font-semibold mb-4">Chat Room</h2>
+          <div class="flex flex-col h-80 overflow-y-auto bg-gray-50 p-4 border border-gray-200 rounded-md">
+            <!-- Chat Messages -->
+            <div class="space-y-4">
+              <div class="flex items-start space-x-4">
+                <img src="https://via.placeholder.com/40" alt="User Avatar" class="rounded-full">
+                <div>
+                  <div class="flex items-center space-x-2">
+                    <span class="font-semibold text-gray-700">John Doe</span>
+                    <span class="text-sm text-gray-500">Today at 12:00 PM</span>
+                  </div>
+                  <p class="text-gray-600">Hey team, the latest report draft is ready for review!</p>
+                </div>
+              </div>
+              <div class="flex items-start space-x-4">
+                <img src="https://via.placeholder.com/40" alt="User Avatar" class="rounded-full">
+                <div>
+                  <div class="flex items-center space-x-2">
+                    <span class="font-semibold text-gray-700">Jane Smith</span>
+                    <span class="text-sm text-gray-500">Today at 12:15 PM</span>
+                  </div>
+                  <p class="text-gray-600">Thanks, I'll take a look and share feedback.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Chat Input -->
+          <div class="mt-4">
+            <div class="flex items-center space-x-4">
+              <input type="text" placeholder="Type a message..." class="flex-1 p-3 bg-white border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+              <input type="file" id="file-upload" class="hidden">
+              <label for="file-upload" class="bg-blue-500 text-white px-4 py-2 rounded-lg cursor-pointer hover:bg-blue-600">Attach</label>
+              <button class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">Send</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tools Section -->
+        <div class="bg-white p-6 border rounded-lg shadow-md">
+          <h2 class="text-xl font-semibold mb-4">Collaboration Tools</h2>
+          <div class="grid grid-cols-1 gap-4">
+            <div class="bg-gray-100 p-4 rounded-lg shadow-sm">
+              <h3 class="text-lg font-semibold">Version Control</h3>
+              <p class="text-gray-600 mt-2">Track changes and view previous versions of the report.</p>
+            </div>
+            <div class="bg-gray-100 p-4 rounded-lg shadow-sm">
+              <h3 class="text-lg font-semibold">Collaborative Editing</h3>
+              <p class="text-gray-600 mt-2">Work together on report drafts in real-time.</p>
+            </div>
+            <div class="bg-gray-100 p-4 rounded-lg shadow-sm">
+              <h3 class="text-lg font-semibold">Feedback and Annotations</h3>
+              <p class="text-gray-600 mt-2">Leave feedback and comments on specific sections of the report.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

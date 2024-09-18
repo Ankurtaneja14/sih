@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collaborative PDF Editor - Government Report Portal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background-color: #f4f4f9;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .pdf-preview {
+            width: 100%;
+            height: 500px;
+            background-color: #e2e8f0; /* Tailwind's gray-200 */
+            border: 1px solid #cbd5e0; /* Tailwind's gray-300 */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5rem;
+            color: #4a5568; /* Tailwind's gray-600 */
+        }
+    </style>
+</head>
+
+<body class="text-gray-700">
+
+    <!-- Sidebar -->
+    <div class="flex h-screen">
+        <div class="w-64 bg-gray-800 text-white shadow-lg">
+            <div class="p-6">
+                <h2 class="text-2xl font-bold">Gov Report Portal</h2>
+            </div>
+            <nav class="mt-6">
+                <ul>
+                    <li class="mb-2">
+                        <a href="index.html" class="block text-gray-100 py-2 px-4 hover:bg-gray-700">Dashboard</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="reports.html" class="block text-gray-100 py-2 px-4 hover:bg-gray-700">Reports</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="task.html" class="block text-gray-100 py-2 px-4 hover:bg-gray-700">Tasks</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="ct.html" class="block text-gray-100 py-2 px-4 hover:bg-gray-700">Collaborative Tools</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Main Content (PDF Editor) -->
+        <div class="flex-1 p-10 bg-white">
+            <div class="mb-8">
+                <h1 class="text-3xl font-semibold">Collaborative PDF Editor</h1>
+                <p class="text-gray-500">Edit the PDF document with your team in real-time.</p>
+            </div>
+
+            <div class="grid grid-cols-4 gap-4">
+                <!-- PDF Editing Tools -->
+                <div class="col-span-1 bg-white p-6 border rounded-lg shadow-md">
+                    <h2 class="text-xl font-semibold mb-4">Editing Tools</h2>
+                    <ul class="space-y-4">
+                        <li>
+                            <button class="w-full bg-gray-800 text-white px-4 py-2 rounded-lg hover:bg-gray-700">Add Text</button>
+                        </li>
+                        <li>
+                            <button class="w-full bg-gray-800 text-white px-4 py-2 rounded-lg hover:bg-gray-700">Highlight Text</button>
+                        </li>
+                        <li>
+                            <button class="w-full bg-gray-800 text-white px-4 py-2 rounded-lg hover:bg-gray-700">Draw Shapes</button>
+                        </li>
+                        <li>
+                            <button class="w-full bg-gray-800 text-white px-4 py-2 rounded-lg hover:bg-gray-700">Insert Images</button>
+                        </li>
+                        <li>
+                            <button class="w-full bg-gray-800 text-white px-4 py-2 rounded-lg hover:bg-gray-700">Add Comments</button>
+                        </li>
+                        <li>
+                            <button class="w-full bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">Download PDF</button>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- PDF Preview Section -->
+                <div class="col-span-3 bg-white p-6 border rounded-lg shadow-md">
+                    <div class="flex justify-between items-center mb-4">
+                        <h2 class="text-xl font-semibold">PDF Preview</h2>
+                        <div class="flex items-center space-x-2">
+                            <button class="bg-gray-800 text-white px-4 py-2 rounded-lg hover:bg-gray-700">Undo</button>
+                            <button class="bg-gray-800 text-white px-4 py-2 rounded-lg hover:bg-gray-700">Redo</button>
+                        </div>
+                    </div>
+
+                    <!-- PDF Preview (Placeholder) -->
+                    <div class="pdf-preview">
+                        <span>PDF Preview Area</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
